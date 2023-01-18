@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Lato';
+    src: url("./fonts/Lato-Black.ttf");
+}
+@font-face {
+    font-family: 'LatoLight';
+    src: url("./fonts/Lato-Light.ttf");
+}
+@font-face {
+    font-family: 'LatoRegular';
+    src: url("./fonts/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: 'LatoThin';
+    src: url("./fonts/Lato-Thin.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'LatoRegular';
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 30%;
+}
+.list-navegacion {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0c4ea2;
+}
+
+header {
+    width: 100%;
+    background-color: #f7de82;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+.container-header {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container-header img {
+    width: 30%;
+}
+
+.container-atrapalos {
+    width: 50%;
+}
+
+.container-atrapalos img {
+    width: 60%;
+}
+
+.container-atrapalos p {
+    font-size: 2.7em;
+    width: 60%;
+    font-family: 'LatoLight';
+}
+
+.container-atrapalos button {
+    width: 25%;
+    height: 50px;
+    color: white;
+    background-color: #0c4ea2;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    min-width: 200px;
+}
+
+.flexbox-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.seccion-info {
+    background-color: #0c4ea2;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-info h2 {
+    margin: 0px;
+    padding: 0;
+    color: #f7de82;
+    font-family: 'LatoThin';
+    font-size: 3.2em;
+    text-transform: uppercase;
+}
+
+.seccion-info h4 {
+    margin: 20px 0px 0px 0px;
+    padding: 0;
+    color: white;
+    font-family: 'LatoThin';
+    font-size: 1.3em;
+}
+
+.container-info{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.container-img-info {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container-img-info img {
+    width: 30%;
+}
+
+.container-img-info p {
+    color: white;
+    font-size: 1.4em;
+    width: 70%;
+    text-align: center;
+    font-family: 'LatoLight';
+}
+
+.btn-atrapar:hover{
+    background-color: white;
+    color: #0c4ea2;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.seccion-lista-pedis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.seccion-lista-pedis h2 {
+    text-align: center;
+    font-family: 'LatoThin';
+    color: #0c4ea2;
+    font-size: 3em;
+    margin-top: 100px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    color: #0c4ea2;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 0px 17px 2px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+    border-radius: 20px;
+    transition: transform 150ms ease-in;
+    min-width: 250px;
+}
+
+.card img {
+    width: 80%;
+    transition: transform 150ms ease-in;
+}
+
+.card h3 {
+    font-family: 'LatoLight';
+    font-size: 1.5em;
+}
+
+.card p {
+    font-family: 'Lato';
+    font-size: 2em;
+}
+
+.card button {
+    width: 70%;
+    height: 50px;
+    color: black;
+    background-color: #f7de82;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: 'LatoRegular';
+    min-width: 100px;
+}
+
+.card button:hover{
+    background-color: #0c4ea2;
+    cursor: pointer;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+.card:hover .agotado {
+    transform: scale(1.2);
+}
+
+.agotado {
+    position: absolute;
+    background-color: red;
+    padding: 10px;
+    color: white;
+    width: 60%;
+    text-align: center;
+    top: 0px;
+}
+
+@media (max-width:1200px) and (min-width:800px) {
+    .container-info {
+        width: 100%;
+    }
+    .container-img-info img {
+        width: 40%;
+    }
+}
+
+@media (max-width:800px) {
+
+    .seccion-info h2 {
+        font-size: 2.4em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .seccion-info h4 {
+        font-size: 1.2em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-info {
+        flex-direction: column;
+    }
+
+    .container-img-info {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    .container-img-info img {
+        width: 20%;
+    }
+    .container-img-info p{
+        font-size: 1.2em;
+        width: 40%;
+    }
+}

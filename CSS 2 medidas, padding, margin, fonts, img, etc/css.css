@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("fonts/Roboto-MediumItalic.ttf");
+}
+
+h1 {
+    font-family: 'Roboto', cursive;
+}
+
+.prob {
+    /* border-width: 50px;
+    border-color: yellow;
+    border-style: dashed;
+     */
+    border: 50px violet solid;
+    padding: 30px;
+}
+
+.cuad {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.cuad1 {
+    background-color: red;
+    margin-left: 100px;
+}
+.cuad2 {
+    background-color: blue;
+    margin-left: 100px;
+}
+.cuad3 {
+    border: 30px black solid;
+    display: block;
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.cuadradito {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.cuadrado-responsive {
+    width: 100vw;
+    height: 200px;
+    background-color: blueviolet;
+}
+.cuadradito-responsive {
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+} 
+
+.imagen-de-fondo {
+    background-image: url("img.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 500px;
+}

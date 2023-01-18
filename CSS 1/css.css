@@ -1,0 +1,56 @@
+
+
+h1 {
+    color:blue;
+}
+
+
+a:hover {
+    color: red;
+    background-color: black;
+}
+
+p {
+    color: blue;
+}
+
+p:first-child {
+    color: red;
+}
+
+
+p:last-child {
+    color: white;
+}
+
+p:nth-child(2){
+    font-size: 20px;
+}
+
+p:nth-child(even) {
+    background-color: green;
+}
+p:nth-child(odd) {
+    background-color: gray;
+}
+
+p::first-letter {
+    font-size: 50px;
+}
+div {
+    border: dashed 5px red;
+    margin: 20px;
+    padding: 20px;
+}
+
+.cuadrado, .circulo {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border: 2px solid black;
+}
+
+.circulo {
+    border-radius: 50%;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+}

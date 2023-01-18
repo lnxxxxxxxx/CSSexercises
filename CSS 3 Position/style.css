@@ -1,0 +1,31 @@
+.cuadrado {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.cuadrado1 {
+    background-color: red;
+}
+.cuadrado2 {
+    background-color: blue;
+    position: relative;
+    /* position: static;
+    position: absolute; */
+    top: 20px;
+    left: 100px;
+}
+.cuadrado3 {
+    background-color: green;
+}
+
+.cuadrado4 {
+    background-color: violet;
+    position: fixed;
+    bottom: 0px;
+    left: 800px;
+}
+
+body {
+    height: 500vh;
+}
